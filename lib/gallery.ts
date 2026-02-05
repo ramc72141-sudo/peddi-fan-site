@@ -1,0 +1,34 @@
+// lib/gallery.ts
+
+export const galleryImages = [
+  { id: 1, src: "/gallery/1.jpg" },
+  { id: 2, src: "/gallery/2.jpg" },
+  { id: 3, src: "/gallery/3.jpg" },
+  { id: 4, src: "/gallery/4.jpg" },
+  { id: 5, src: "/gallery/5.jpg" },
+  { id: 6, src: "/gallery/6.jpg" },
+  { id: 7, src: "/gallery/7.jpg" },
+  { id: 8, src: "/gallery/8.jpg" },
+  { id: 9, src: "/gallery/9.jpg" },
+  { id: 10, src: "/gallery/10.jpg" },
+
+  { id: 11, src: "/gallery/11.jpg" },
+  { id: 12, src: "/gallery/12.jpg" },
+  { id: 13, src: "/gallery/13.jpg" },
+  { id: 14, src: "/gallery/14.jpg" },
+  { id: 15, src: "/gallery/15.jpg" },
+  { id: 16, src: "/gallery/16.jpg" },
+  { id: 17, src: "/gallery/17.jpg" },
+  { id: 18, src: "/gallery/18.jpg" },
+  { id: 19, src: "/gallery/19.jpg" },
+  { id: 20, src: "/gallery/20.jpg" },
+
+  { id: 21, src: "/gallery/21.jpg" },
+  { id: 22, src: "/gallery/22.jpg" },
+  { id: 23, src: "/gallery/23.jpg" },
+  { id: 24, src: "/gallery/24.jpg" },
+  { id: 25, src: "/gallery/25.jpg" },
+  { id: 26, src: "/gallery/26.jpg" },
+  { id: 27, src: "/gallery/27.jpg" },
+  { id: 28, src: "/gallery/28.jpg" },
+];
