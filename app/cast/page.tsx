@@ -1,5 +1,6 @@
 "use client";
-
+import { Suspense } from "react";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -20,7 +21,7 @@ const castMembers = [
     id: "hero",
     name: "Ram Charan",
     role: "Hero",
-    icon: User,
+     image: "/cast/hero.jpg",
     description:
       "Global Star Ram Charan, one of the most celebrated actors in Indian cinema, known for his powerful performances and incredible dance skills.",
     hasFilmography: true,
@@ -47,7 +48,7 @@ const castMembers = [
     id: "heroine",
     name: "Jahnavi Kapoor",
     role: "Heroine",
-    icon: User,
+     image: "/cast/heroine.jpg",
     description:
       "The leading lady of PEDDI .",
     hasFilmography: true,
@@ -68,7 +69,7 @@ const castMembers = [
     id: "director",
     name: "Buchi Babu Sana",
     role: "Director",
-    icon: Clapperboard,
+    image: "/cast/director.jpg",
     description:
       "The visionary director behind PEDDI.",
     hasFilmography: true,
@@ -82,7 +83,7 @@ const castMembers = [
     id: "music",
     name: "AR Rahman",
     role: "Music Director",
-    icon: Music,
+    image: "/cast/music.jpg",
     description:
       "The musical genius composing the soundtrack for PEDDI",
     hasFilmography: true,
@@ -110,7 +111,7 @@ const castMembers = [
     id: "shivrajkumar",
     name: "Shivarajkumar",
     role: "Gournaidu",
-    icon: User,
+    image: "/cast/shiv.jpg",
     description: "Plays Gournaidu in PEDDI.",
     hasFilmography: false,
     filmography: [],
@@ -119,7 +120,7 @@ const castMembers = [
     id: "divyendu",
     name: "Divyendu Sharma",
     role: "Ram Bujji",
-    icon: User,
+    image: "/cast/divyendu.jpg",
     description: "Plays Ram Bujji in PEDDI.",
     hasFilmography: false,
     filmography: [],
@@ -128,7 +129,7 @@ const castMembers = [
     id: "jagapathi",
     name: "Jagapathi Babu",
     role: "Appalasoori",
-    icon: User,
+    image: "/cast/jaggu.jpg",
     description: "Plays Appalasoori in PEDDI.",
     hasFilmography: false,
     filmography: [],
@@ -165,7 +166,16 @@ const castMembers = [
 ];
 
 
-export default function CastPage() {
+export default function CastPageWrapper() {
+  return (
+    <Suspense fallback={null}>
+      <CastPage />
+    </Suspense>
+  );
+}
+
+function CastPage() {
+
   const searchParams = useSearchParams();
   const [selectedMember, setSelectedMember] = useState<string | null>(null);
 
@@ -201,7 +211,7 @@ export default function CastPage() {
         {/* Cast Grid */}
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {castMembers.map((member, index) => {
-            const Icon = member.icon;
+            const Icon = member.icon ?? User;
             return (
               <motion.div
                 key={member.id}
@@ -217,9 +227,20 @@ export default function CastPage() {
                 <div className="relative bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
                   <div className="flex items-start gap-4">
                     {/* Photo placeholder */}
-                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-secondary/50 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors duration-300">
-                      <Icon className="w-10 h-10 md:w-12 md:h-12 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
-                    </div>
+                   <div className="w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden bg-secondary/50 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors duration-300">
+  {member.image ? (
+    <Image
+      src={member.image}
+      alt={member.name}
+      width={112}
+      height={112}
+      className="object-cover w-full h-full"
+    />
+  ) : (
+    <Icon className="w-10 h-10 md:w-12 md:h-12 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+  )}
+</div>
+
 
                     {/* Info */}
                     <div className="flex-1 min-w-0">
