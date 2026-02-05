@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Twitter, Instagram } from "lucide-react";
+import { Twitter, Instagram, Ticket } from "lucide-react";
 
 const socialLinks = [
   {
@@ -16,6 +16,12 @@ const socialLinks = [
     label: "Peddi Movie Instagram",
     enabled: true,
   },
+  {
+  icon: Ticket,
+  href: "https://in.bookmyshow.com/movies/vizag-visakhapatnam/peddi-telugu/ET00439772",
+  label: "BookMyShow Tickets",
+  enabled: true,
+},
 ];
 
 export function Footer() {
