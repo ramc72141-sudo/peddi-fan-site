@@ -31,4 +31,5 @@ export const galleryImages = [
   { id: 26, src: "/gallery/26.jpg" },
   { id: 27, src: "/gallery/27.jpg" },
   { id: 28, src: "/gallery/28.jpg" },
+  { id: 29, src: "/gallery/29.jpg" },
 ];
