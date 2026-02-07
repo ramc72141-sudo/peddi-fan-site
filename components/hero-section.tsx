@@ -22,14 +22,20 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 py-20 text-center">
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-primary text-sm md:text-base uppercase tracking-[0.3em] mb-6"
-        >
-          Mega Power Star Ram Charan
-        </motion.p>
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  className="mb-6 text-center uppercase text-primary tracking-[0.3em]"
+>
+  <div className="text-xs md:text-sm">
+    Mega Power Star
+  </div>
+  <div className="mt-1 text-sm md:text-base tracking-[0.35em]">
+    Ram Charan
+  </div>
+</motion.div>
+
 
         <motion.h1
   initial={{
