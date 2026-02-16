@@ -32,4 +32,7 @@ export const galleryImages = [
   { id: 27, src: "/gallery/27.jpg" },
   { id: 28, src: "/gallery/28.jpg" },
   { id: 29, src: "/gallery/29.jpg" },
+  { id: 30, src: "/gallery/30.jpg" },
+  { id: 31, src: "/gallery/31.jpg" },
+  { id: 32, src: "/gallery/32.jpg" },
 ];
