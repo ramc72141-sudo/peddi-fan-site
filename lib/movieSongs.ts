@@ -6,7 +6,7 @@ export const movieSongs = [
     id: 1,
     slug: "chikiri-chikiri",
     title: "Chikiri Chikiri",
-    singer: "TBA",
+    singer: "Mohit Chauhan",
     musicDirector: "A.R. Rahman",
     duration: "4:33",
     type: "Mass Folk",
@@ -27,13 +27,21 @@ export const movieSongs = [
     movie: "peddi",
     id: 2,
     slug: "motivational-song",
-    title: "2nd Single",
-    singer: "TBA",
+    title: "Rai Rai Raa Raa",
+    singer: "A.R. Rahman",
     musicDirector: "A.R. Rahman",
-    duration: "TBA",
+    duration: "4:24",
     type: "Motivational Song",
-    released: false,
-    youtube: {},
+    released: true,
+
+    
+    youtube: {
+      telugu: "https://youtu.be/g5oUluD9ScA?si=Tw9kkcjUxxnolZAa",
+      hindi: "https://youtu.be/3IDAr45xjUQ?si=loaMZXVte9lhlF_c",
+      tamil: "https://youtu.be/J70g85LILlM?si=r_AxqFMSRvzlBxfR",
+      kannada: "https://youtu.be/-Pu7QM3x6BM?si=v6IXVRhu6g4FGijn",
+      malayalam: "https://youtu.be/3bUFagXfbYQ?si=8NpEBjdh38iw0EGc",  
+    },
   },
 
   {
