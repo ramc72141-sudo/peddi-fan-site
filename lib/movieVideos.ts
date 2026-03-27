@@ -15,8 +15,8 @@ export type MovieVideo = {
 export const movieVideos: MovieVideo[] = [
   {
     slug: "glimpse",
-    title: "Glimpse",
-    description: "PEDDI Glimpse",
+    title: "First Shot",
+    description: "PEDDI First Shot",
     languages: [
       {
         name: "Telugu",
@@ -43,8 +43,30 @@ export const movieVideos: MovieVideo[] = [
 
   {
     slug: "teaser",
-    title: "Teaser",
-    languages: [], // ⏳ add later
+    title: "Glimpse",
+    description: "PEDDI Pehelwan",
+    languages: [
+      {
+        name: "Telugu",
+        url: "https://youtu.be/f4poVE-r8Ho?si=XQ_zuBdJ0x4aUtbH",
+      },
+      {
+        name: "Hindi",
+        url: "https://youtu.be/ctbsR2557AA?si=IWiX6p1ke1soO-0q",
+      },
+      {
+        name: "Tamil",
+        url: "https://youtu.be/-HjPL9Nmf5M?si=5RiUiIWZB7niYabM",
+      },
+      {
+        name: "Kannada",
+        url: "https://youtu.be/n4RYUGfYGU0?si=fhKagvp0cMBNLOOk",
+      },
+      {
+        name: "Malayalam",
+        url: "https://youtu.be/vfHKPy7MuFM?si=bs1oATz16hEf9QJ6",
+      },
+    ], 
   },
 
   {
