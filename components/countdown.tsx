@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 // ✅ Configure the release date here (May 1st, 2026)
-const RELEASE_DATE = new Date("2026-04-30T00:00:00");
+const RELEASE_DATE = new Date("2026-06-04T00:00:00");
 
 interface TimeUnit {
   value: number;

@@ -90,7 +90,7 @@ export function HeroSection() {
   </p>
 
   <h2 className="font-serif text-4xl md:text-5xl tracking-[0.25em] uppercase text-primary">
-  30&nbsp;APRIL&nbsp;2026
+  04&nbsp;JUNE&nbsp;2026
 </h2>
 
 
@@ -117,7 +117,7 @@ export function HeroSection() {
 
 
           <a
-            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=PEDDI+Movie+Release&dates=20260430T043000Z/20260430T053000Z&details=PEDDI+movie+release+starring+Ram+Charan&location=India"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=PEDDI+Movie+Release&dates=20260604T043000Z/20260604T053000Z&details=PEDDI+movie+release+starring+Ram+Charan&location=India"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-border bg-secondary/40 hover:border-primary/50 transition"
