@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   title: "PEDDI | Global Star Ram Charan",
   description:
     "A fan-made countdown dedicated to Global Star Ram Charan's upcoming movie PEDDI. The Rage Begins.",
-  generator: "v0.app",
   keywords: ["Peddi", "Ram Charan", "Telugu Movie", "Fan Site", "Countdown"],
   icons: {
     icon: [
